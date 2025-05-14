@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar's Visual Design Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+        <div class="splash-logo">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="splash-path" d="M50,10 C70,10 85,25 85,50 C85,75 70,90 50,90 C30,90 15,75 15,50 C15,25 30,10 50,10 Z" fill="none" stroke="#f7bfb4" stroke-width="2"></path>
+                <text x="50" y="55" text-anchor="middle" class="splash-text">T</text>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <div class="theme-toggle-track">
+            <div class="theme-toggle-thumb"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Tushar Parihar</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#tools" class="nav-link">Tools</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="noise-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animated-headline">
+                <span class="headline-word">Hi,</span>
+                <span class="headline-word">I'm</span>
+                <span class="headline-word">Tushar</span>
+                <span class="headline-word">—</span>
+                <span class="headline-word">Creative</span>
+                <span class="headline-word">Designer</span>
+                <span class="headline-word">&</span>
+                <span class="headline-word">Visual</span>
+                <span class="headline-word">Storyteller</span>
+            </h1>
+            <button class="cta-button">Explore My Work</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <div class="blob-mask">
+                    <img src="./tushar 0.png" alt="Tushar's Profile Photo">
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="about-text">Passionate and Detail-Oriented Graphic Designer with 2+ years of experience, delivering visually
+ compelling designs across diverse industries. Successfully completed 80+ projects, ranging from
+ branding, social media graphics, and event posters to UI/UX elements. Adept at translating client visions
+ into engaging visual narratives with a strong sense of aesthetics and market trends..</p>
+                
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3>2+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Design Philosophy</h3>
+                        <p>Simplicity with impact</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Favorite Tools</h3>
+                        <p>Photoshop Canva Illustrator Figma Blender</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certificates-container">
+            <div class="certificate-card">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <div class="certificate-icon">
+                            <img src="./Certificate/Adobe Illustrator.jpg" alt="Adobe Certification" class="certificate-img">
+                        </div>
+                        <h3 class="certiHeader">Adobe Illustrator Designer</h3> 
+                    </div>
+                    <div class="certificate-back">
+                        <h4>Adobe Certified Designer</h4>
+                        <p> certificate of completion from Udemy for a course titled "Master Adobe Illustrator: Design Awesome Logos and Graphics.</p>
+                        <p class="certificate-date">Issued: June 5,  2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certificate-card">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <div class="certificate-icon">
+                            <img src="./Certificate/AI - Powerd Graphic Designer.jpg" alt="AI Powerd" class="certificate-img">
+                        </div>
+                        <h3 class="certiHeader">AI Powerd Graphic Designer</h3>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>AI Powerd</h4>
+                        <p>"AI-Powered Graphic Design: Mastering Figma & Emerging Tech..".</p>
+                        <p class="certificate-date">Issued: June 18, 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certificate-card">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <div class="certificate-icon">
+                            <img src="./Certificate/Blender.jpg" alt="Google Certification" class="certificate-img">
+                        </div>
+                        <h3 class="certiHeader">Blender Essential</h3>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>Blender Essential</h4>
+                        <p>Titled "Blender Essential: From Beginner to 3D Masterclass.</p>
+                        <p class="certificate-date">Issued: Nov 17,2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certificate-card">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <div class="certificate-icon">
+                            <img src="./Certificate/Professional Diploma in Social Media Marketing.jpg" alt="Figma Certification" class="certificate-img">
+                        </div>
+                        <h3 class="certiHeader">Social Media Marketing</h3>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>Social Media Marketing</h4>
+                        <p> Professional Diploma in Social Media Marketing & Management..</p>
+                        <p class="certificate-date">Issued:April 6, 2025</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- New Certificate -->
+            <div class="certificate-card">
+                <div class="certificate-inner">
+                    <div class="certificate-front">
+                        <div class="certificate-icon">
+                            <img src="./Certificate/Ui UX Master.jpg" alt="Motion Graphics Certification" class="certificate-img">
+                        </div>
+                        <h3 class="certiHeader"> UI/UX Master</h3>
+                    </div>
+                    <div class="certificate-back">
+                        <h4>UI/UX Master</h4>
+                        <p>Advanced certification  of completion from Udemy for a UI/UX Design Masterclass with Adobe XD.</p>
+                        <p class="certificate-date">Issued: Nov 8, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Software Section -->
+    <section id="tools" class="tools">
+        <h2 class="section-title">My Creative Arsenal</h2>
+        <div class="tools-container">
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <img width="40" height="40" viewBox="0 0 24 24" fill="none" src="./Logo/photoshop-icon.svg">
+                    </img>
+                </div>
+                <h3>Photoshop</h3>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <img width="40" height="40" viewBox="0 0 24 24" fill="none" src="./Logo/illustrator-icon.svg">
+                    </img>
+                </div>
+                <h3>Illustrator</h3>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <img width="40" height="40" viewBox="0 0 24 24" fill="none" src="./Logo/canva-icon.svg">
+                    </img>
+                </div>
+                <h3>Canva</h3>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <img width="40" height="40" viewBox="0 0 24 24" fill="none" src="./Logo/figma-icon.svg">
+                    </img>
+                </div>
+                <h3>Figma</h3>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <img width="40" height="40" viewBox="0 0 24 24" fill="none" src="./Logo/adobe-premiere-pro-icon.svg">
+                    </img>
+                </div>
+                <h3>Premiere Pro</h3>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <img width="40" height="40" viewBox="0 0 24 24" fill="none" src="./Logo/adobe-after-effects-icon.svg">
+                    </img>
+                </div>
+                <h3>After Effects</h3>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <img width="40" height="40" viewBox="0 0 24 24" fill="none" src="./Logo/blender-icon.svg">
+                    </img>
+                </div>
+                <h3>Blender</h3>
+            </div>
+            <div class="tool-item">
+                <div class="tool-icon">
+                    <img width="40" height="40" viewBox="0 0 24 24" fill="none" src="./Logo/indesign-icon.svg">
+                    </img>
+                </div>
+                <h3>InDesign</h3>
+            </div>
+        </div>
+    </section>
+
+ <!-- Projects Gallery -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects Gallery</h2>
+        <div class="project-categories">
+            <button class="category-btn active" data-category="all">All Projects</button>
+            <button class="category-btn" data-category="social-media">Social Media</button>
+            <button class="category-btn" data-category="branding">Branding</button>
+            <button class="category-btn" data-category="ui-ux">UI/UX</button>
+            <button class="category-btn" data-category="creative-art">Creative Art</button>
+        </div>
+        <div class="projects-grid">
+            <!-- Original Projects -->
+            <div class="project-item" data-category="branding">
+                <div class="project-image">
+                    <img src="/Branding/3 branding.png" alt="Brand Identity Project">
+                    <div class="project-overlay">
+                        <h3>Eco Brand Identity</h3>
+                        <p>Complete branding for sustainable products company</p>
+                        <button class="view-project-btn" data-project="project1">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="ui-ux">
+                <div class="project-image">
+                    <img src="/Ui ux/2 ui.png" alt="Brand Identity Project">
+                    
+                    <div class="project-overlay">
+                        <h3>UI UX Design</h3>
+                        <p>Vibrant poster design for Gaming</p>
+                        <button class="view-project-btn" data-project="project2">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="ui-ux">
+                <div class="project-image">
+                    <img src="/Ui ux/3 ui.png" alt="Mobile App UI Design">
+                    <div class="project-overlay">
+                        <h3>Game Design UI</h3>
+                        <p>User interface design for health tracking application</p>
+                        <button class="view-project-btn" data-project="project3">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="branding">
+                <div class="project-image">
+                    <img src="/Branding/2 brading.png" alt="Logo Design Collection">
+                    <div class="project-overlay">
+                        <h3>Branding</h3>
+                        <p>Provide branding for Prodct</p>
+                        <button class="view-project-btn" data-project="project4">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="creative-art">
+                <div class="project-image">
+                    <img src="/Creative art/art-6--.jpg" alt="Website Redesign">
+                    <div class="project-overlay">
+                        <h3>Creative Art</h3>
+                        <p>Creating Unique art In Photoshop</p>
+                        <button class="view-project-btn" data-project="project5">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="creative-art">
+                <div class="project-image">
+                    <img src="/Creative art/art-3.jpg" alt="Movie Poster Design">
+                    <div class="project-overlay">
+                        <h3>Creative Art</h3>
+                        <p>Creating Unique art In Photoshop</p>
+                        <button class="view-project-btn" data-project="project6">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="creative-art">
+                <div class="project-image">
+                    <img src="/Creative art/art-5.jpg" alt="Movie Poster Design">
+                    <div class="project-overlay">
+                        <h3>creative-art</h3>
+                        <p>Creating Unique art In Photoshop</p>
+                        <button class="view-project-btn" data-project="project6">View Details</button>
+                    </div>
+                </div>
+            </div>
+<div class="project-item" data-category="creative-art">
+                <div class="project-image">
+                    <img src="/Creative art/art-4-secound.jpg" alt="Movie Poster Design">
+                    <div class="project-overlay">
+                        <h3>Creative Art</h3>
+                        <p>Creating Unique art In Photoshop</p>
+                        <button class="view-project-btn" data-project="project6">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Projects (7 more) -->
+            <div class="project-item" data-category="creative-art">
+                <div class="project-image">
+                    <img src="/Creative art/art 01.png" alt="Abstract Art">
+                    <div class="project-overlay">
+                        <h3>Creative Art</h3>
+                        <p>Creating Unique art In Photoshop</p>
+                        <button class="view-project-btn" data-project="project7">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="branding">
+                <div class="project-image">
+                    <img src="/Branding/1 Branding.png" alt="Tech Startup Branding">
+                    <div class="project-overlay">
+                        <h3> Brand Identity</h3>
+                        <p>Complete brand identity for Car Rental</p>
+                        <button class="view-project-btn" data-project="project8">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="social-media">
+                <div class="project-image">
+                    <img src="/Social Media/1 social media.png" alt="Product Launch Campaign">
+                    <div class="project-overlay">
+                        <h3>Social Media</h3>
+                        <p>Social media Event Poster</p>
+                        <button class="view-project-btn" data-project="project9">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="ui-ux">
+                <div class="project-image">
+                    <img src="/Ui ux/1 ui.png" alt="Travel App Interface">
+                    <div class="project-overlay">
+                        <h3>Clothing Brand Interface</h3>
+                        <p>User interface design for Clothing Brand</p>
+                        <button class="view-project-btn" data-project="project10">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="creative-art">
+                <div class="project-image">
+                    <img src="/Creative art/Art-2.jpg" alt="Digital Illustrations">
+                    <div class="project-overlay">
+                        <h3>Digital Illustrations</h3>
+                        <p>Collection of character and concept illustrations</p>
+                        <button class="view-project-btn" data-project="project11">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="branding">
+                <div class="project-image">
+                    <img src="/Branding/2 braning.png" alt="Restaurant Rebrand">
+                    <div class="project-overlay">
+                        <h3>Shoes Rebrand</h3>
+                        <p>Complete rebranding for upscale</p>
+                        <button class="view-project-btn" data-project="project12">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="social-media">
+                <div class="project-image">
+                    <img src="/Social Media/2 social media.png" alt="Social Media Templates">
+                    <div class="project-overlay">
+                        <h3>Social Media Templates</h3>
+                        <p>Custom template designs for Events</p>
+                        <button class="view-project-btn" data-project="project13">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Project Modal -->
+    <div class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-background">
+            <canvas id="contact-canvas"></canvas>
+        </div>
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Create Something Amazing Together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 12H16L14 15L10 9L8 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>tushar.24jibca003@jietjodhpur.ac.in</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10C20 14.4183 16.4183 18 12 18C7.58172 18 4 14.4183 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 22H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Jodhpur, Rajasthan, +91-7737297548 
+                            </span>
+                        </div>
+                    </div>
+                   <div class="social-links">
+                        <a href="https://www.linkedin.com/in/tushar-parihar/" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.instagram.com/design_by_tush?igsh=Yzc2dHlsa2YyZWk2" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4078 15.9059C10.5771 15.7723 9.80976 15.3801 9.21484 14.7852C8.61991 14.1902 8.22773 13.4229 8.09406 12.5922C7.9604 11.7615 8.09206 10.9099 8.47032 10.1584C8.84858 9.40685 9.45418 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87658 12.63 8C13.4789 8.12588 14.2648 8.52146 14.8717 9.12831C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Tushar</div>
+            <p>&copy; 2025 Tushar's Visual Design Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
