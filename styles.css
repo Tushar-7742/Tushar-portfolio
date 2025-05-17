@@ -640,7 +640,108 @@ nav ul li {
   font-size: 1.1rem;
 }
 
+/* Services Section */
+.services {
+    background-color: rgba(0, 0, 0, 0.02);
+    color: #333; /* Changed text color for the entire section */
+}
+
+.services-swiper {
+    padding: 30px 50px;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.9); /* Lighter background for better contrast */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 40px 30px;
+    text-align: center;
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    color: #333; /* Text color for service cards */
+}
+
+.dark-mode .service-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.05);
+    color: #f1faee; /* Light text color for dark mode */
+}
+
+.service-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #f1faee; /* Light text color for dark mode */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-peach);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--accent-peach);
+    transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+    background-color: var(--accent-peach);
+    color: white;
+    transform: rotate(10deg) scale(1.1);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--accent-peach);
+}
+
+.service-card p {
+    margin-bottom: 20px;
+    flex-grow: 1;
+    color: #444; /* Slightly darker text for paragraphs */
+}
+
+.dark-mode .service-card p {
+    color: #ddd; /* Lighter text for dark mode */
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin-top: auto;
+}
+
+.service-features li {
+    padding: 8px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .service-features li {
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+.service-features li:first-child {
+    border-top: none;
+}
+
 /* Projects Section */
+.projects {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
 .project-categories {
   display: flex;
   justify-content: center;
@@ -672,34 +773,44 @@ nav ul li {
   /* border-color: var(--accent-peach); */
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+/* Projects Swiper Grid Styles */
+.projects-swiper {
+    padding: 30px 50px;
+    margin-bottom: 30px;
+    --swiper-grid-column-gap: 20px;
+    --swiper-grid-row-gap: 20px;
+}
+
+.projects-swiper .swiper-wrapper {
+    row-gap: 20px; /* Gap between rows */
+}
+
+.projects-swiper .swiper-slide {
+    height: auto; /* Allow slides to size based on content */
+    margin-top: var(--swiper-grid-row-gap);
 }
 
 .project-item {
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  position: relative;
-  box-shadow: var(--shadow);
-  /* height: 300px;  REMOVED:  Let's make height fixed */
-  width: 100%; /* Ensure item takes full grid cell width */
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow);
+    width: 100%;
+    height: 100%;
 }
 
 .project-image {
-  width: 100%;
-  /* height: 100%;  REMOVED: Let's control height with CSS below */
-  position: relative;
-  overflow: hidden;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
 }
 
 .project-image img {
-  width: 100%;
-  height: auto; /* Important: Maintain aspect ratio */
-  aspect-ratio: 1 / 1;  /* NEW:  Force 1:1 aspect ratio */
-  object-fit: cover;
-  transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
 .project-item:hover .project-image img {
@@ -769,6 +880,176 @@ nav ul li {
 .view-project-btn:hover {
   background-color: white;
   color: var(--accent-peach);
+}
+
+/* Blog Section */
+.blog {
+    background-color: rgba(0, 0, 0, 0.02);
+    color: #333; /* Changed text color for the entire section */
+}
+
+.blog-swiper {
+    padding: 30px 50px;
+    margin-bottom: 30px;
+}
+
+.blog-card {
+    background: rgba(255, 255, 255, 0.9); /* Lighter background for better contrast */
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #333; /* Text color for blog cards */
+}
+
+.dark-mode .blog-card {
+    background: rgba(255, 255, 255, 0.1);
+    color: #f1faee; /* Light text color for dark mode */
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image {
+    position: relative;
+    overflow: hidden;
+    height: auto; /* Remove fixed height */
+    max-height: 300px; /* Add max-height instead */
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto; /* Auto height to maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
+    max-height: 300px; /* Maximum height */
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.1);
+}
+
+.blog-date {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--accent-peach);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1;
+}
+
+.blog-date .day {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.blog-date .month {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.blog-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.blog-category {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--accent-peach);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.dark-mode .blog-category {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.blog-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #222; /* Darker color for blog titles */
+}
+
+.dark-mode .blog-title {
+    color: #fff; /* White for dark mode */
+}
+
+.blog-excerpt {
+    margin-bottom: 20px;
+    flex-grow: 1;
+    color: #444; /* Slightly darker text for excerpts */
+}
+
+.dark-mode .blog-excerpt {
+    color: #ddd; /* Lighter text for dark mode */
+}
+
+.read-more-btn {
+    align-self: flex-start;
+    background-color: transparent;
+    color: var(--accent-peach);
+    border: 1px solid var(--accent-peach);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.read-more-btn:hover {
+    background-color: var(--accent-peach);
+    color: white;
+}
+
+/* Swiper Custom Styles */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--accent-peach);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--accent-peach);
+    color: white;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--accent-peach);
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: var(--accent-peach);
 }
 
 /* Project Modal */
@@ -1049,6 +1330,12 @@ footer {
   .animated-headline {
     font-size: 2.5rem;
   }
+  
+  .services-swiper,
+  .blog-swiper,
+  .projects-swiper {
+    padding: 30px 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1097,6 +1384,30 @@ footer {
     width: 280px;
     height: 280px;
   }
+  
+  .services-swiper,
+  .blog-swiper,
+  .projects-swiper {
+    padding: 20px 30px;
+  }
+  
+  .service-card,
+  .blog-card {
+    padding: 20px;
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .blog-title {
+    font-size: 1.1rem;
+  }
+  
+  .projects-swiper .swiper-wrapper {
+    row-gap: 15px;
+  }
 }
 
 /* Responsive adjustments for social links */
@@ -1111,10 +1422,6 @@ footer {
 
   .animated-headline {
     font-size: 1.5rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
   }
 
   .certificate-card {
@@ -1133,7 +1440,27 @@ footer {
     width: 40px;
     height: 40px;
   }
+  
+  .services-swiper,
+  .blog-swiper,
+  .projects-swiper {
+    padding: 10px 20px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  
+  .blog-image {
+    height: 180px;
+  }
+  
+  .projects-swiper .swiper-wrapper {
+    row-gap: 10px;
+  }
 }
+
 /* About Section - Mobile Responsiveness */
 @media (max-width: 768px) {
     .about-container {
