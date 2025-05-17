@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper JS CDN - Make sure to use version 11 or later for grid support -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- Splash Screen -->
@@ -40,7 +42,9 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#certificates" class="nav-link">Certificates</a></li>
                 <li><a href="#tools" class="nav-link">Tools</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
@@ -85,14 +89,14 @@
                 </div>
             </div>
             <div class="about-content">
-                <p class="about-text">Passionate and Detail-Oriented Graphic Designer with 3+ years of experience, delivering visually
- compelling designs across diverse industries. Successfully completed 100+ projects, ranging from
+                <p class="about-text">Passionate and Detail-Oriented Graphic Designer with 2+ years of experience, delivering visually
+ compelling designs across diverse industries. Successfully completed 80+ projects, ranging from
  branding, social media graphics, and event posters to UI/UX elements. Adept at translating client visions
  into engaging visual narratives with a strong sense of aesthetics and market trends..</p>
                 
                 <div class="info-cards">
                     <div class="info-card">
-                        <h3>3+</h3>
+                        <h3>2+</h3>
                         <p>Years of Experience</p>
                     </div>
                     <div class="info-card">
@@ -258,7 +262,99 @@
         </div>
     </section>
 
- <!-- Projects Gallery -->
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">My Services</h2>
+        <div class="swiper services-swiper">
+            <div class="swiper-wrapper">
+                <!-- Service 1 -->
+                <div class="swiper-slide service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette">
+                            <circle cx="13.5" cy="6.5" r=".5"/>
+                            <circle cx="17.5" cy="10.5" r=".5"/>
+                            <circle cx="8.5" cy="7.5" r=".5"/>
+                            <circle cx="6.5" cy="12.5" r=".5"/>
+                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Creating visually stunning designs that communicate your message effectively. From logos to marketing materials, I deliver high-quality graphics that stand out.</p>
+                    <ul class="service-features">
+                        <li>Logo Design</li>
+                        <li>Brand Identity</li>
+                        <li>Marketing Materials</li>
+                        <li>Social Media Graphics</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="swiper-slide service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-dashboard">
+                            <rect width="7" height="9" x="3" y="3" rx="1"/>
+                            <rect width="7" height="5" x="14" y="3" rx="1"/>
+                            <rect width="7" height="9" x="14" y="12" rx="1"/>
+                            <rect width="7" height="5" x="3" y="16" rx="1"/>
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Crafting intuitive and engaging user interfaces that enhance user experience. I focus on creating designs that are both beautiful and functional.</p>
+                    <ul class="service-features">
+                        <li>Website Design</li>
+                        <li>Mobile App Interfaces</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                    </ul>
+                </div>
+                
+                
+                <!-- Service 4 -->
+                <div class="swiper-slide service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video">
+                            <path d="m22 8-6 4 6 4V8Z"/>
+                            <rect width="14" height="12" x="2" y="6" rx="2" ry="2"/>
+                        </svg>
+                    </div>
+                    <h3>Motion Graphics</h3>
+                    <p>Bringing designs to life through animation and motion. I create engaging motion graphics for various digital platforms.</p>
+                    <ul class="service-features">
+                        <li>Logo Animation</li>
+                        <li>Explainer Videos</li>
+                        <li>Social Media Animations</li>
+                        <li>Video Intros/Outros</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="swiper-slide service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box">
+                            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
+                            <path d="m3.3 7 8.7 5 8.7-5"/>
+                            <path d="M12 22V12"/>
+                        </svg>
+                    </div>
+                    <h3>3D Modeling & Rendering</h3>
+                    <p>Creating realistic 3D models and renders for products, environments, and more. I use industry-standard tools to bring your ideas into three dimensions.</p>
+                    <ul class="service-features">
+                        <li>Product Visualization</li>
+                        <li>Architectural Rendering</li>
+                        <li>Character Modeling</li>
+                        <li>3D Animation</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery with Swiper -->
     <section id="projects" class="projects">
         <h2 class="section-title">Projects Gallery</h2>
         <div class="project-categories">
@@ -268,164 +364,173 @@
             <button class="category-btn" data-category="ui-ux">UI/UX</button>
             <button class="category-btn" data-category="creative-art">Creative Art</button>
         </div>
-        <div class="projects-grid">
-            <!-- Original Projects -->
-            <div class="project-item" data-category="branding">
-                <div class="project-image">
-                    <img src="/Branding/3 branding.png" alt="Brand Identity Project">
-                    <div class="project-overlay">
-                        <h3>Eco Brand Identity</h3>
-                        <p>Complete branding for sustainable products company</p>
-                        <button class="view-project-btn" data-project="project1">View Details</button>
+        
+        <!-- Swiper for Projects with 2 rows -->
+        <div class="swiper projects-swiper">
+            <div class="swiper-wrapper">
+                <!-- Original Projects -->
+                <div class="swiper-slide project-item" data-category="branding">
+                    <div class="project-image">
+                        <img src="/Branding/3 branding.png" alt="Brand Identity Project">
+                        <div class="project-overlay">
+                            <h3>Eco Brand Identity</h3>
+                            <p>Complete branding for sustainable products company</p>
+                            <button class="view-project-btn" data-project="project1">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="ui-ux">
+                    <div class="project-image">
+                        <img src="/Ui ux/2 ui.png" alt="Brand Identity Project">
+                        
+                        <div class="project-overlay">
+                            <h3>UI UX Design</h3>
+                            <p>Vibrant poster design for Gaming</p>
+                            <button class="view-project-btn" data-project="project2">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="ui-ux">
+                    <div class="project-image">
+                        <img src="/Ui ux/3 ui.png" alt="Mobile App UI Design">
+                        <div class="project-overlay">
+                            <h3>Game Design UI</h3>
+                            <p>User interface design for health tracking application</p>
+                            <button class="view-project-btn" data-project="project3">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="branding">
+                    <div class="project-image">
+                        <img src="/Branding/2 brading.png" alt="Logo Design Collection">
+                        <div class="project-overlay">
+                            <h3>Branding</h3>
+                            <p>Provide branding for Prodct</p>
+                            <button class="view-project-btn" data-project="project4">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="creative-art">
+                    <div class="project-image">
+                        <img src="/Creative art/art-6--.jpg" alt="Website Redesign">
+                        <div class="project-overlay">
+                            <h3>Creative Art</h3>
+                            <p>Creating Unique art In Photoshop</p>
+                            <button class="view-project-btn" data-project="project5">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="creative-art">
+                    <div class="project-image">
+                        <img src="/Creative art/art-3.jpg" alt="Movie Poster Design">
+                        <div class="project-overlay">
+                            <h3>Creative Art</h3>
+                            <p>Creating Unique art In Photoshop</p>
+                            <button class="view-project-btn" data-project="project6">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="creative-art">
+                    <div class="project-image">
+                        <img src="/Creative art/art-5.jpg" alt="Movie Poster Design">
+                        <div class="project-overlay">
+                            <h3>creative-art</h3>
+                            <p>Creating Unique art In Photoshop</p>
+                            <button class="view-project-btn" data-project="project6">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="creative-art">
+                    <div class="project-image">
+                        <img src="/Creative art/art-4-secound.jpg" alt="Movie Poster Design">
+                        <div class="project-overlay">
+                            <h3>Creative Art</h3>
+                            <p>Creating Unique art In Photoshop</p>
+                            <button class="view-project-btn" data-project="project6">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Projects (7 more) -->
+                <div class="swiper-slide project-item" data-category="creative-art">
+                    <div class="project-image">
+                        <img src="/Creative art/art 01.png" alt="Abstract Art">
+                        <div class="project-overlay">
+                            <h3>Creative Art</h3>
+                            <p>Creating Unique art In Photoshop</p>
+                            <button class="view-project-btn" data-project="project7">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="branding">
+                    <div class="project-image">
+                        <img src="/Branding/1 Branding.png" alt="Tech Startup Branding">
+                        <div class="project-overlay">
+                            <h3> Brand Identity</h3>
+                            <p>Complete brand identity for Car Rental</p>
+                            <button class="view-project-btn" data-project="project8">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="social-media">
+                    <div class="project-image">
+                        <img src="/Social Media/1 social media.png" alt="Product Launch Campaign">
+                        <div class="project-overlay">
+                            <h3>Social Media</h3>
+                            <p>Social media Event Poster</p>
+                            <button class="view-project-btn" data-project="project9">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="ui-ux">
+                    <div class="project-image">
+                        <img src="/Ui ux/1 ui.png" alt="Travel App Interface">
+                        <div class="project-overlay">
+                            <h3>Clothing Brand Interface</h3>
+                            <p>User interface design for Clothing Brand</p>
+                            <button class="view-project-btn" data-project="project10">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="creative-art">
+                    <div class="project-image">
+                        <img src="/Creative art/Art-2.jpg" alt="Digital Illustrations">
+                        <div class="project-overlay">
+                            <h3>Digital Illustrations</h3>
+                            <p>Collection of character and concept illustrations</p>
+                            <button class="view-project-btn" data-project="project11">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="branding">
+                    <div class="project-image">
+                        <img src="/Branding/2 braning.png" alt="Restaurant Rebrand">
+                        <div class="project-overlay">
+                            <h3>Shoes Rebrand</h3>
+                            <p>Complete rebranding for upscale</p>
+                            <button class="view-project-btn" data-project="project12">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide project-item" data-category="social-media">
+                    <div class="project-image">
+                        <img src="/Social Media/2 social media.png" alt="Social Media Templates">
+                        <div class="project-overlay">
+                            <h3>Social Media Templates</h3>
+                            <p>Custom template designs for Events</p>
+                            <button class="view-project-btn" data-project="project13">View Details</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="project-item" data-category="ui-ux">
-                <div class="project-image">
-                    <img src="/Ui ux/2 ui.png" alt="Brand Identity Project">
-                    
-                    <div class="project-overlay">
-                        <h3>UI UX Design</h3>
-                        <p>Vibrant poster design for Gaming</p>
-                        <button class="view-project-btn" data-project="project2">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="ui-ux">
-                <div class="project-image">
-                    <img src="/Ui ux/3 ui.png" alt="Mobile App UI Design">
-                    <div class="project-overlay">
-                        <h3>Game Design UI</h3>
-                        <p>User interface design for health tracking application</p>
-                        <button class="view-project-btn" data-project="project3">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="branding">
-                <div class="project-image">
-                    <img src="/Branding/2 brading.png" alt="Logo Design Collection">
-                    <div class="project-overlay">
-                        <h3>Branding</h3>
-                        <p>Provide branding for Prodct</p>
-                        <button class="view-project-btn" data-project="project4">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="creative-art">
-                <div class="project-image">
-                    <img src="/Creative art/art-6--.jpg" alt="Website Redesign">
-                    <div class="project-overlay">
-                        <h3>Creative Art</h3>
-                        <p>Creating Unique art In Photoshop</p>
-                        <button class="view-project-btn" data-project="project5">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="creative-art">
-                <div class="project-image">
-                    <img src="/Creative art/art-3.jpg" alt="Movie Poster Design">
-                    <div class="project-overlay">
-                        <h3>Creative Art</h3>
-                        <p>Creating Unique art In Photoshop</p>
-                        <button class="view-project-btn" data-project="project6">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="creative-art">
-                <div class="project-image">
-                    <img src="/Creative art/art-5.jpg" alt="Movie Poster Design">
-                    <div class="project-overlay">
-                        <h3>creative-art</h3>
-                        <p>Creating Unique art In Photoshop</p>
-                        <button class="view-project-btn" data-project="project6">View Details</button>
-                    </div>
-                </div>
-            </div>
-<div class="project-item" data-category="creative-art">
-                <div class="project-image">
-                    <img src="/Creative art/art-4-secound.jpg" alt="Movie Poster Design">
-                    <div class="project-overlay">
-                        <h3>Creative Art</h3>
-                        <p>Creating Unique art In Photoshop</p>
-                        <button class="view-project-btn" data-project="project6">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Additional Projects (7 more) -->
-            <div class="project-item" data-category="creative-art">
-                <div class="project-image">
-                    <img src="/Creative art/art 01.png" alt="Abstract Art">
-                    <div class="project-overlay">
-                        <h3>Creative Art</h3>
-                        <p>Creating Unique art In Photoshop</p>
-                        <button class="view-project-btn" data-project="project7">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="branding">
-                <div class="project-image">
-                    <img src="/Branding/1 Branding.png" alt="Tech Startup Branding">
-                    <div class="project-overlay">
-                        <h3> Brand Identity</h3>
-                        <p>Complete brand identity for Car Rental</p>
-                        <button class="view-project-btn" data-project="project8">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="social-media">
-                <div class="project-image">
-                    <img src="/Social Media/1 social media.png" alt="Product Launch Campaign">
-                    <div class="project-overlay">
-                        <h3>Social Media</h3>
-                        <p>Social media Event Poster</p>
-                        <button class="view-project-btn" data-project="project9">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="ui-ux">
-                <div class="project-image">
-                    <img src="/Ui ux/1 ui.png" alt="Travel App Interface">
-                    <div class="project-overlay">
-                        <h3>Clothing Brand Interface</h3>
-                        <p>User interface design for Clothing Brand</p>
-                        <button class="view-project-btn" data-project="project10">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="creative-art">
-                <div class="project-image">
-                    <img src="/Creative art/Art-2.jpg" alt="Digital Illustrations">
-                    <div class="project-overlay">
-                        <h3>Digital Illustrations</h3>
-                        <p>Collection of character and concept illustrations</p>
-                        <button class="view-project-btn" data-project="project11">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="branding">
-                <div class="project-image">
-                    <img src="/Branding/2 braning.png" alt="Restaurant Rebrand">
-                    <div class="project-overlay">
-                        <h3>Shoes Rebrand</h3>
-                        <p>Complete rebranding for upscale</p>
-                        <button class="view-project-btn" data-project="project12">View Details</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="social-media">
-                <div class="project-image">
-                    <img src="/Social Media/2 social media.png" alt="Social Media Templates">
-                    <div class="project-overlay">
-                        <h3>Social Media Templates</h3>
-                        <p>Custom template designs for Events</p>
-                        <button class="view-project-btn" data-project="project13">View Details</button>
-                    </div>
-                </div>
-            </div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
-
+   
     <!-- Project Modal -->
     <div class="project-modal">
         <div class="modal-content">
@@ -513,6 +618,8 @@
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
